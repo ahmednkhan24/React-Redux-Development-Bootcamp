@@ -1,6 +1,11 @@
+/*
+ * Responsible for using the axios library to 
+ * make HTTP requests to the YouTube API
+ */
+
 import axios from 'axios';
 
-const KEY = 'AIzaSyCt1ste8cSlBArQS_FSbcrznH35lKBWMQ8';
+const KEY = 'AIzaSyDQIl-Xh7X96yFqo8Elz946saOI3fCjl9I';
 
 export default axios.create({
     baseURL: 'https://www.googleapis.com/youtube/v3',
