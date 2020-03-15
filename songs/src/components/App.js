@@ -1,16 +1,21 @@
-/*
- * Created as a functional component as opposed to class based component because
- * now that we are making use of redux we're going to make use 
- * of component level state much less frequently.
- * Instead we're going to generally store all of our data inside of redux instead.
- */
-
 import React from 'react';
+import SongList from './SongList';
+import SongDetail from './SongDetail';
 
 const App = () => {
-    return (
-        <div>App</div>
-    );
+
+   return (
+       <div className="ui container grid">
+           <div className="ui row">
+               <div className="column eight wide">
+                   <SongList />
+               </div>
+               <div className="column eight wide">
+                   <SongDetail />
+               </div>
+           </div>
+        </div>
+   );
 };
 
 export default App;
