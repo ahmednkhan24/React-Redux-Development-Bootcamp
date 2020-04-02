@@ -14,7 +14,6 @@ const ResourceList = ({ resource }) => {
     fetchResources(resource);
   }, [resource]);
 
- 
   return (
     <div>
       <h3>{ resource }</h3>
